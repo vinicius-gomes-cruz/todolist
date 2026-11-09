@@ -17,10 +17,9 @@ import org.springframework.context.annotation.Configuration;
         security = @SecurityRequirement(name = "bearerAuth")
 )
 @SecurityScheme(
-        name = "bearerAuth",
+        name = "basicAuth",
         type = SecuritySchemeType.HTTP,
-        scheme = "bearer",
-        bearerFormat = "JWT"
+        scheme = "basic"
 )
 public class OpenApiConfig {
 }
